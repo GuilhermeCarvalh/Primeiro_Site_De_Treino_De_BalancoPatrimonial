@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+:root{
+    --font-padrao:'Kdam Thmor Pro', sans-serif;
+    --font-form: 'Kenia', cursive;
+}
+
+body{
+    background-image:linear-gradient(45deg,#000000aa, #116824aa,#059268aa,#000000aa,#000000);
+    background-size:300%,300%;
+    animation: colors 15s ease infinite ;
+}
+
+@keyframes colors {
+    0%{
+     background-position: 0%, 50%;
+    }
+    50%{
+      background-position: 100%, 50%;
+    }
+    100%{
+      background-position: 0%, 50%;
+    }
+}
+
+main {
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    transition: width 0.5s, height 0.5s;
+}
+main > h1 {
+    font-family:var(--font-padrao);
+    margin-bottom:10px;
+    text-shadow:1px 1px 3px rgba(22, 22, 182, 0.733);
+}
+#areaform{
+    background-image: url('../imagem/dolar.jpg');
+    background-size: cover;
+    background-position:center center;
+    box-shadow: 0px 0px 10px #000000af;
+    width:250px;
+    height:500px;
+    border-radius:30px;
+    display:flex;
+    align-items: column;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+#areaform > #image{
+    background-image: url('../imagem/pexels-energepiccom-159888.jpg');
+    background-position:center center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-size:cover;
+    display:none;
+}
+#areaform > .image img{
+    height:100%;
+    width:100%;
+
+}
+#areaform fildset legend{
+    color:white;
+    text-shadow: 1px 2px 2px #061a8f;
+    text-align: center;
+    background-color: #0000006e;
+    font-family: var(--font-padrao);
+    font-style: italic;
+    transition: width 0.5s, height 0.5s;
+}
+#form{
+    margin-top:30px;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.inpt{
+    height:40px;
+    background-color: #000000d5;
+    width:95%;
+    margin:0px auto 10px auto;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    display: flex;
+    flex-direction: row;
+}
+
+div.inpt > label{
+    width:47px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.inpt > label > span {
+    color:white;
+}
+
+div.inpt > input{
+    height:100%;
+    border:none;
+    outline:none;
+    width:100%;
+    padding-inline: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #031a9788;
+    color:white;
+    font-family: var(--font-padrao);
+
+}
+div.inpt > input:focus{
+     background-color: #0f03b1
+}
+div.btn{
+    height:50px;
+    background-color: #000000d5;
+    width:95%;
+    margin:0px auto 10px auto;
+    border-radius: 20px; 
+    display: flex;
+
+    
+}
+div.btn > button {
+     background-color: #03b831b4;
+     border:none;
+     outline: none;
+     color:white;
+     font-family: var(--font-padrao);
+     margin:auto;
+     padding:5px;
+     cursor:pointer;
+     border-radius: 2px;
+}
+
+div.btn > button:hover{
+    opacity: 0.9;
+    border-radius:9px;
+    transition: 0.5s;
+}
+div#result{
+    height:10%;
+    text-align:center;
+    background-color:#00000083;
+    width:100%;
+    
+}
+div#result{
+    font-family: var(--font-padrao);
+    text-shadow: 1px 1px 2px rgba(145, 94, 94, 0.493);
+    color:rgb(6, 172, 0);
+}
+
+@media screen and (min-width:600px) and (max-width:992px){
+
+    #areaform{
+        width:70%;
+        height:470px;
+        display: flex;
+        
+    }
+    #areaform > h1{
+        margin-bottom: 5px;
+    }
+    #areaform legend{
+        font-size: 1.2rem; 
+        margin-bottom: 10px;
+        
+    }
+ 
+    #areaform > #image{
+        width:20%;
+        display:block;
+        height:100%;
+    }
+   
+    
+    #areaform  #form {
+        width:80%;
+        display:flex;
+        justify-content: center;
+        
+        margin:auto;
+        
+    }
+
+    #areaform  .inpt {
+        height:50px;
+        width:80%;
+        margin-bottom:5px;
+    }
+    
+
+}
+
+@media screen and (min-width:992px){
+       #areaform{
+         width:95%;
+         height:500px;
+         display:flex;
+         flex-direction: row-reverse;
+       }
+       #areaform fildset legend{
+         font-size: 1.5rem;
+         line-height: 25px;
+         
+         padding:5px;
+         margin-top:10px;
+       }
+       #areaform h1{
+         font-size: 1.5rem;
+       }
+       #areaform > #image{
+        display:block;
+        border-radius:0px 30px 30px 0px;
+        width:50%;
+        height:100%;
+       }
+       #areaform #form{
+        width:85%;
+        height: 100%;
+       }
+       #areaform  .inpt {
+        height:50px;
+        width:100%;
+        margin-bottom:10px;
+    }
+       fildset{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:50%;
+        height: 100%;
+        padding:10px 0px;
+       }
+}

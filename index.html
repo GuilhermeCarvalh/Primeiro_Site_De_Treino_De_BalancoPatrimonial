@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresarial</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <h1>Seu balanço patrimonial aqui</h1>
+         <div id="areaform">
+            <div id="image"></div>
+            
+             <fildset>
+                
+                <legend>Digite os dados de sua empresa para saber como vai sua saúde </legend>
+                <div id="form">
+                    <div class="inpt">
+                        <label for="icaixa"><span class="material-symbols-outlined">
+                            payments
+                            </span></label>
+                       <input type="number" id="icaixa" placeholder="Caixa++" min="1">
+                   </div>
+                    <div class="inpt">
+                        <label for="icredit"><span class="material-symbols-outlined">
+                            credit_card
+                            </span></label>
+                        <input type="number" id="icredit" placeholder="Credit++" >
+                    </div>
+                    <div class="inpt">
+                        <label for="icapex"><span class="material-symbols-outlined">
+                            trending_up
+                            </span></label>
+                        <input type="number" id="icapex" placeholder="Capex--">
+                    </div>
+                    <div class="inpt">
+                        <label for="iopex"><span class="material-symbols-outlined">
+                            attach_money
+                            </span></label>
+                        <input type="number" id="iopex" placeholder="Opex--">
+                    </div>
+        
+                    <div class="inpt">
+                        <label for="isocios"><span class="material-symbols-outlined">
+                            groups
+                            </span></label>
+                        <input type="number" id="isocios" min="1" placeholder="N° de Socios">
+                    </div>
+
+                    <div class="btn">
+                        <button id="btn1">ACCONT BALANCE <span class="material-symbols-outlined">
+                            account_balance
+                            </span></button>
+                    </div>
+                 </fildset>
+                </div>
+                 <div id="result">
+                    <span class="material-symbols-outlined">
+                        point_of_sale
+                        </span>
+                 </div>
+             </fildset>
+            
+         </div>
+        
+    </main>
+     <script src="balanço/script.js"></script>
+</body>
+</html>
